@@ -5,7 +5,7 @@ export default function MainContent({ tab }) {
       <h1>{company}</h1>
       <p>{title}</p>
       {duties.map(duty => {
-        return <div>{duty}</div>
+        return <div key={duty}>{duty}</div>
       })}
     </div>
   )
